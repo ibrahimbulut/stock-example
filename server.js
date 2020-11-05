@@ -16,11 +16,6 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('MongoDB database Connection succesfully !!!');
 });
-/*
-app.get('/', (req,res) => {
-    res.json('Welcome to home');
-});
-*/
 
 const stockRouter = require('./routes/stocks');
 

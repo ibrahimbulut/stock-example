@@ -10,13 +10,6 @@ router.route('/').get((req,res) => {
         .catch(err => res.status(400).json('Error' + err));
 });
 
-/*
-router.route('/').get((req,res) => {
-    Stock.find()
-        .then(stocks => res.json(stocks))
-        .catch(err => res.status(400).json('Error' + err));
-});
-*/
 
 router.route('/add').post((req,res) => {
     const product_id=Number(req.body.product_id);
